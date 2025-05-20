@@ -85,6 +85,8 @@ nav a:hover {
     overflow: hidden;
 }
 
+
+
 /* Imagen de fondo como elemento HTML */
 .hero-background {
     position: absolute;
@@ -114,6 +116,8 @@ nav a:hover {
 }
 
 .hero-content {
+    -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
     max-width: 800px;
     padding: 0 20px;
@@ -163,6 +167,29 @@ nav a:hover {
     background-color: #C1A87D;
     color: white;
 }
+
+/* Animaciones */
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
